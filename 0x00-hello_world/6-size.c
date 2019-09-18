@@ -1,5 +1,5 @@
 /**
- * main - print the size of char, int, long int, long long int, and float
+ * main 
  *
  * Return: Always 0 (Success)
  */
