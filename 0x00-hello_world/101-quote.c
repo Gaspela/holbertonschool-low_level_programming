@@ -3,7 +3,7 @@
  *
  * Return: Always 1 (Error)
  */
-#include<stadio.h>
+#include<stdio.h>
 #include <unistd.h>
 int main(void)
 {
