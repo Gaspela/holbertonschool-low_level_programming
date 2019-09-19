@@ -9,7 +9,9 @@
 void ldigit(int num)
 {
 	int last;
+
 	last = num;
+
 	do {
 	last %= 10;
 	} while ((last >= 10) || (last <= -10));
