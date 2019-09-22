@@ -4,25 +4,26 @@
 /**
  * ldigit - desc
  *
- * @num: The number to be checked
+ * @m: The number to be checked
  */
-void ldigit(int num)
+void ldigit(int m)
 {
-	int last;
+	int lst;
 
-	last = num;
+	lst = m % 10;
 
-	do {
-	last %= 10;
-	} while ((last >= 10) || (last <= -10));
-	printf("Last digit of %i is %i and ", num, last);
-	if (last > 5)
-	printf("is greater than 5\n");
-	else if (last == 0)
-	printf("is 0\n");
+	if (lst > 5)
+	{
+	printf("Last digit of %i is %i and is greater than 5\n", m, lst);
+	}
+	else if (lst == 0)
+	{
+	printf("Last digit of %d is %d and is 0\n", m, lst);
+	}
 	else
-	printf("is less than 6 and not 0\n");
-
+	{
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", m, lst);
+	}
 }
 /**
  * main - random srand rand
