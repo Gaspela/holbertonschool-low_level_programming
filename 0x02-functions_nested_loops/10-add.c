@@ -1,7 +1,8 @@
 #include "holberton"
 /**
- * add - Two integers and returns the result. 
- *
+ * add - Two integers and returns the result.
+ * @a: first data.
+ * @b: second data.
  * Return: (a + b)
 */
 int add(int a, int b)
