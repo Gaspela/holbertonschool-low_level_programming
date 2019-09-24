@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * _isalpha - Function that checks for alphabetic character.
+ * @c:Check the data return.
+ * Return: (1) if character is lower,uppercase and zero it is otherwise.
  */
 int _isalpha(int c)
 {
