@@ -1,4 +1,4 @@
-#include "homberton.h"
+#include "holberton.h"
 /**
  * print_to_98 -  Prints all natural numbers.
  * @n: Value data
