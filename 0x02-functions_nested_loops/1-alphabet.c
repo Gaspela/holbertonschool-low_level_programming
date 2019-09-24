@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- * Function that prints the alphabet, in lowercase, followed by a new line.
- */
+   * print_alphabet - Prints the alphabet, in lowercase, a new line.
+    *
+      */
 void print_alphabet(void)
 {
 	char c;
