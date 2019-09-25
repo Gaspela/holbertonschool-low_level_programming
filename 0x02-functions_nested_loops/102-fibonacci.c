@@ -9,8 +9,8 @@ int main(void)
 	int n;
 	long lst[50];
 
-	fib[0] = 1;
-	fib[1] = 2;
+	lst[0] = 1;
+	lst[1] = 2;
 
 	for (n = 2; n < 50; n++)
 	{
