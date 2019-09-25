@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_times_table - Prints the n times table, starting with 0.
- * 
+ *
  * @n: Vaule data check
  */
 
