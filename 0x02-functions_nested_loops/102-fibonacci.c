@@ -8,7 +8,6 @@ int main(void)
 {
 	int n;
 	long lst[50];
-	
 
 	fib[0] = 1;
 	fib[1] = 2;
