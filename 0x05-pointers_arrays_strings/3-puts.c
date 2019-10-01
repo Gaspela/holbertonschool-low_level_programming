@@ -4,7 +4,7 @@
  * @str: Check value string.
  * Return: lnt
  */
-int _puts(char *str)
+void _puts(char *str)
 {
 	int i;
 
