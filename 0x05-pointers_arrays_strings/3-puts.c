@@ -1,10 +1,10 @@
 #include "holberon.h"
 /**
- * _strlen - Return the length of a string.
+ * _puts - Return the length of a string.
  * @str: Check value string.
  * Return: lnt
  */
-int _strlen(char *str)
+int _puts(char *str)
 {
 	int i;
 
