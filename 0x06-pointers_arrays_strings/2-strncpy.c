@@ -8,23 +8,23 @@
 */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, src_length, end;
+	int i, src_lnt, end;
 
-	src_length = 0;
+	src_lnt = 0;
 	for (i = 0; src[i] != '\0'; i++)
-		src_length++;
+		src_lnt++;
 
-	if (n > src_length)
-		end = src_length;
+	if (n > src_lnt)
+		end = src_lnt;
 	else
 		end = n;
 /*****************************************/
 	for (i = 0; i < end; i++)
 		dest[i] = src[i];
 
-	if (n > src_length)
+	if (n > src_lnt)
 	{
-		for (i = src_length; i < n; i++)
+		for (i = src_lnt; i < n; i++)
 			dest[i] = '\0';
 	}
 
