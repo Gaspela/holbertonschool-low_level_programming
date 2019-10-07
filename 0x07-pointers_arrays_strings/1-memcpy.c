@@ -1,6 +1,6 @@
 #include "holberton.h"
-/*
- * _memcpy - Function that copies memory area.
+/**
+ * *_memcpy - Function that copies memory area.
  * @dest: Destiny array copy.
  * @src: Source copy.
  * @n: Values numbers copy memory
