@@ -10,7 +10,7 @@ char *_strchr(char *s, char c)
 {
 	int i;
 /*Scroll the arrangement and find char c*/
-	for (i = 0; s[i] != '\0' && s[i] != c; i++)
+	for (i = 0; s[i] != '\0'; i++)
 /*Find and compare char c*/
 		if (s[i] == c)
 			return (&s[i]);
