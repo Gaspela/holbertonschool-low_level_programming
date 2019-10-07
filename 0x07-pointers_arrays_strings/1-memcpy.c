@@ -4,6 +4,7 @@
  * @n: Value numbers copy memory.
  * @dest: Destiny array copy.
  * @src: Source copy.
+ * Return: dest.
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
