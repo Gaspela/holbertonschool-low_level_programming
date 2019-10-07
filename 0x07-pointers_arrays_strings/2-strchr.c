@@ -12,9 +12,9 @@ char *_strchr(char *s, char c)
 /*Scroll the arrangement and find char c*/
 	for (i = 0; s[i] != '\0' && s[i] != c; i++)
 /*Find and compare char c*/
-		if (s[i] == c)
-			return (&s[i]);
-			
-	return ('\0');
+		if (s[i] != c)
+			return ('\0');
+				else 	
+				return (&s[i]);
 
 }
