@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strspn - Gets the length of a prefix substring.
+ * _strpbrk - Searches a string for any of a set of bytes.
  * @s: String find value.
  * @accept: Bytes to search.
  *
@@ -13,13 +13,14 @@ char *_strpbrk(char *s, char *accept)
 	int j;
 
 	for (i = 0; s[i] != '\0'; i++)
-		{
+	{
 		for (j = 0; accept[j] != '\0'; j++)
-			{
-			if (s[i] == accept[j])
-					return (&s[i]);
-			}
-		}
+		{
 
-	return (0);
+			if (s[i] == accept[j])
+				return (&s[i]);
+		}
+	}
+
+		return (0);
 }
