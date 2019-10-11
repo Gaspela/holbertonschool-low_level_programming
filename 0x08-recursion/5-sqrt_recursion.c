@@ -7,16 +7,16 @@
 int _sqrt_recursion(int n)
 {
 
-	return (sqrt(0, n));
+	return (ssqrt(0, n));
 
 }
 /**
- * sqrt - Search square a number.
- * @n: Value number.
- * @i: Value number.
+ * ssqrt - Search square a number.
+ * @n: Value number n.
+ * @i: Value number i.
  * Return: -1.
  */
-int sqrt(int i, int n)
+int ssqrt(int i, int n)
 {
 
 	if (i * i == n)
@@ -24,7 +24,7 @@ int sqrt(int i, int n)
 		return (i);
 	else if (i < n)
 		{
-		return (sqrt(i + 1, n));
+		return (ssqrt(i + 1, n));
 		}
 	else
 		return (-1);
