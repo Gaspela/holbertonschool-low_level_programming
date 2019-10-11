@@ -16,7 +16,7 @@ int is_prime_number(int n)
  * @n: Value check.
  * Return: 1 and 0.
  */
-int check_prime(int i, int n)
+int prime(int i, int n)
 {
 
 	if (n <= 1)
