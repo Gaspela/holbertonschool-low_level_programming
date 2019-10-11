@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * is_prime_number - Returns 1 if the input integer is a prime number.
- * @n: Value n
- * Return: primei
+ * @n: Value n.
+ * Return: prime.
  */
 int is_prime_number(int n)
 {
@@ -16,7 +16,7 @@ int is_prime_number(int n)
  * @n: Value check.
  * Return: 1 and 0.
  */
-int prime(int i, int n)
+int check_prime(int i, int n)
 {
 
 	if (n <= 1)
