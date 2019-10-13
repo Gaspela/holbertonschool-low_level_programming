@@ -2,40 +2,32 @@
 #include <stdio.h>
 
 /**
- *_atoi - swap values
- *@s: size
- *Return: pointer
+ *_atoi - Swap values.
+ *@s: Size.
+ *Return: Pointer.
  */
-
 int _atoi(char *s)
 {
+	int i = 0, len = 0, num = 0, sign = 1, ok = 0;
 
-int pos = 0;
-int sign = 1;
-int res = 0;
-int counting = 0;
+	while (s[len] != '\0')
+	{
+		len++;
+	}
 
-while (s[pos] != '\0')
-{
-if (s[pos] == '-')
-{
-sign *= -1;
-}
-if (s[pos] >= 48 && s[pos] <= 57)
-{
-counting = 1;
-if (res != 0)
-{
-res = (res * 10) + (sign * (s[pos] - 48));
-}
-else
-{
-res = sign * (s[pos] - 48);
-}
-}
-else if (counting == 1)
-break;
-pos++;
-}
-return (res);
+	while (i < len && ok == 0)
+	{
+		if (s[i] == '-')
+			sign *= -1;
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			num = num * 10 + sign * (s[i] - 48);
+			if (s[i + 1] >= '0' && s[i + 1] <= '9')
+				ok = 0;
+			else
+				ok = 1;
+		}
+		i++;
+	}
+	return (num);
 }
