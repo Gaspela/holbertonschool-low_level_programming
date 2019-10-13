@@ -4,11 +4,11 @@
  * @str: Check value string.
  * Return: lnt
  */
-void _puts(char *s)
+void _puts(char *str)
 {
 	int i;
 
-0	for (i = 0; s[i] != '\0'; i++)
-		_putchar(s[i]);
+for (i = 0; str[i] != '\0'; i++)
+		_putchar(str[i]);
 	_putchar('\n');
 }
