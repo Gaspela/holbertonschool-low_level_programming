@@ -2,7 +2,7 @@
 #define HOLBERTON_H
 
 int _putchar(char c);
-int is_positive_number(char *number);
-int number_of_coins(int cents);
+int pnumber(char *num);
+int numberc(int pss);
 
 #endif
