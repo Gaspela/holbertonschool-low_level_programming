@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	sum = 0;
 	for (i = 1; i < argc; i++)
 	{
-		if (is_positive_number(argv[i]))
+		if (pnumber(argv[i]))
 		{
 			sum += atoi(argv[i]);
 		}
@@ -32,19 +32,19 @@ int main(int argc, char *argv[])
 		return (0);
 }
 /**
- * is_positive_number - Check string only number.
+ * pnumber - Check string only number.
  * @num: Value check string.
  * Return: 1 Only digit, 0.
  */
-int is_positive_number(char *num)
+int pnumber(char *num)
 {
 	int i;
 
 	for (i = 0; num[i] != '\0'; i++)
-		{
+	{
 		if (!isdigit(num[i]))
 			return (0);
-		}
+	}
 
-		return (1);
+	return (1);
 }
