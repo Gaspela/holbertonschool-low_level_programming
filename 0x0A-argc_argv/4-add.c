@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include "holberton.h"
 /**
  * main - Add positive numbers.
  * @argc: Number of arg.
@@ -9,28 +10,26 @@
  */
 int main(int argc, char *argv[])
 {
+	int i;
+	unsigned int sum;
 
-	int sum = 0, i, n;
-
-	if (argc > 1)
+	sum = 0;
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		if (is_positive(argv[i]))
 		{
-		if (is_positive(argv[i]) == 0)
-		{
-			n = atoi(argv[i]);
-			sum += n;
+			sum += atoi(argv[i]);
 		}
 		else
 		{
-		printf("Error\n");
-		return (1);
-		}
+			printf("Error\n");
+			return (1);
 		}
 	}
-		printf("%d\n", sum);
-			return (0);
 
+	printf("%u\n", sum);
+
+	return (0);
 }
 /**
  * is_positive - Check string only number.
