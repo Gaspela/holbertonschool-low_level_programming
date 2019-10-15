@@ -26,8 +26,8 @@ int _strlen(char *s)
 char *str_concat(char *s1, char *s2)
 {
 
-	int i; 
-	int len1: 
+	int i;
+	int len1:
 	int len2;
 	char *p;
 
@@ -38,9 +38,9 @@ char *str_concat(char *s1, char *s2)
 
 		len1 = _strlen(s1);
 		len2 = _strlen(s2);
-	p = malloc(sizeof(char) * (size1 + size2 + 1));
+	p = malloc(sizeof(char) * (len1 + len2 + 1));
 	if (p == NULL)
-			return (NULL);
+		return (NULL);
 
 	for (i = 0; i < len1; i++)
 		p[i] = s1[i];
