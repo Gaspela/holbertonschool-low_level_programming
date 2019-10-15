@@ -3,6 +3,7 @@
 #define HOLBERTON_H
 
 int _putchar(char c);
+/*String length*/
 int _strlen(char *s);
 
 char *create_array(unsigned int size, char c);
