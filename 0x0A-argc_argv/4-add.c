@@ -16,27 +16,27 @@ int main(int argc, char *argv[])
 	sum = 0;
 	for (i = 1; i < argc; i++)
 	{
-		if (is_positive(argv[i]))
+		if (is_positive_number(argv[i]))
 		{
 			sum += atoi(argv[i]);
 		}
 		else
 		{
 			printf("Error\n");
-			return (1);
+				return (1);
 		}
 	}
 
 	printf("%u\n", sum);
 
-	return (0);
+		return (0);
 }
 /**
- * is_positive - Check string only number.
+ * is_positive_number - Check string only number.
  * @num: Value check string.
  * Return: 1 Only digit, 0.
  */
-int is_positive(char *num)
+int is_positive_number(char *num)
 {
 	int i;
 
