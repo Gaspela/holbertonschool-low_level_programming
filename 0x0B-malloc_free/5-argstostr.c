@@ -42,11 +42,8 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
-			cc[position] = av[i][j];
-				position++;
-
-		cc[position] = '\n';
-			position++;
+			cc[position++] = av[i][j];
+		cc[position++] = '\n';
 	}
 	cc[position] = '\0';
 
