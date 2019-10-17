@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "holberton.h"
 /**
  * malloc_checked - Allocates memory using malloc.
  * @b: Amount memory the array.
@@ -13,5 +13,6 @@ void *malloc_checked(unsigned int b)
 	p = malloc(b);
 	if (p == NULL)
 	exit(98);
+	return (p);
 
 }
