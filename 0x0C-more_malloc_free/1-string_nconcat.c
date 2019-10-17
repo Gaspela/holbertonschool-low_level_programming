@@ -21,7 +21,7 @@ int _strlen(char *s)
  * @s1: My first string.
  * @s2: My second string.
  * @n: NUmber bytes from s2 use.
- * Retunr: Cc
+ * Retunr: Cc.
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
