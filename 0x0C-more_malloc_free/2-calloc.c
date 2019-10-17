@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
+/**
  * _calloc - Allocates memory for an array
  * @nmemb: Size of array.
  * @size: Size.
@@ -8,6 +8,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+
 	char *p;
 	unsigned int i;
 
