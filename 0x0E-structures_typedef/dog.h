@@ -1,24 +1,26 @@
-#ifndef Macro_god
-#define Macro_god
+#ifndef Macro_dog
+#define Macro_dog
 /**
  * struct dog - Elementos of dog.
  * @name: Dog name.
  * @age: Dog age.
  * @owner: Dog owner.
 */
-struct dog
+typedef struct dog
 {
 
 	char *name;
 	float *age;
 	char *owner;
 
-};
+} dog_t;
 /**
  * dog_t - New elements dog.
+ * @name: Dog name.
+ * @age: Dog age.
+ * @owner: Dog owner.
+ * @d: data.
 */
-typedef struct dog dog_t;
-
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
