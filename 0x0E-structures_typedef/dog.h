@@ -15,7 +15,7 @@ struct dog
 
 };
 /**
- * dog_t - New elements dog 
+ * dog_t - New elements dog.
 */
 typedef struct dog dog_t;
 
