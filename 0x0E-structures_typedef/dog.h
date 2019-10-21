@@ -8,11 +8,9 @@
 */
 typedef struct dog
 {
-
 	char *name;
-	float *age;
+	float age;
 	char *owner;
-
 } dog_t;
 /**
  * dog_t - New elements dog.
