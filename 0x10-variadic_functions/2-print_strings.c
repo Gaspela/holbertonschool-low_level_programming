@@ -17,8 +17,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 	/*Access all the arguments assigned to valist*/
 		ptr = va_arg(args, char *);
-		if (ptr != NULL)
-		{
+		if (ptr)
+
 		/*Print arguments assigned to valist for v_arg*/
 			printf("%s", ptr);
 		else
