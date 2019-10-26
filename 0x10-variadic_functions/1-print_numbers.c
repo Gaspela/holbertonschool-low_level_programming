@@ -12,14 +12,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 /*Initialize valist for num number of arguments*/
 	va_start(list, n);
 /*Access all the arguments assigned to valist*/
-	for(i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 	{/*Print arguments assigned to valist for v_arg*/
 		printf("%d", va_arg(list, n));
 		/*If separator is NULL, dont print it*/
-		if (separator != NULL);
-		{
+		if (separator && (i < n - 1))
+
 			printf("%s", separator);
-		}
+
 	}
 
 	printf("\n");
