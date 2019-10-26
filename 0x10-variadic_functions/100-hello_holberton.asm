@@ -1,5 +1,5 @@
 section     .data
-	msg db 'Hello, Holberton',0xa /*String*/
+	msg db 'Hello, Holberton', 10 /*String*/
 	msglen equ $ -msg /*length of string*/
 
 section .text
