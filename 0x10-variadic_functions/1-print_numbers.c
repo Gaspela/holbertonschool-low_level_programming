@@ -14,7 +14,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 /*Access all the arguments assigned to valist*/
 	for (i = 0; i < n; i++)
 	{/*Print arguments assigned to valist for v_arg*/
-		printf("%d", va_arg(list, n));
+		printf("%d", va_arg(list, int));
 		/*If separator is NULL, dont print it*/
 		if (separator && (i < n - 1))
 
