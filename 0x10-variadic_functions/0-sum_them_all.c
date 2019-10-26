@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include "variadic_functions.h"
-#include <stdarg.h>
 /**
  * sum_them_all - Return sum of all parameters.
  * @n: Value int numbers.
@@ -22,7 +20,7 @@ int sum_them_all(const unsigned int n, ...)
 
 		sum += va_arg(args, int);
 /*Clean memory reserved for valist*/
-	
+
 	va_end(args);
 	return (sum);
 
