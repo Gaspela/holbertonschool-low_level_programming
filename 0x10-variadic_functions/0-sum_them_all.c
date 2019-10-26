@@ -4,7 +4,7 @@
 /**
  * sum_them_all - Return sum of all parameters.
  * @n: Value int numbers.
- * Return: Int.
+ * Return: sum.
 */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -19,11 +19,10 @@ int sum_them_all(const unsigned int n, ...)
 	va_start(args, n);
 /*Access all the arguments assigned to valist*/
 	for (i = 0; i < n; i++)
-	{
-		sum += va_start(args, int);
+
+		sum += va_arg(args, int);
 /*Clean memory reserved for valist*/
-		
-	}
+	
 	va_end(args);
 	return (sum);
 
