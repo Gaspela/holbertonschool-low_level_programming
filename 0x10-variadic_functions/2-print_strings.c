@@ -16,14 +16,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 	/*Access all the arguments assigned to valist*/
-		ptr = va_start(args, char *);
+		ptr = va_arg(args, char *);
 		if (ptr != NULL)
 		{
 		/*Print arguments assigned to valist for v_arg*/
 			printf("%s", ptr);
 		else
 			printf("(nil)");
-			if (separator && (i < n - 1))
+			if (separator && i < (n - 1))
 				printf("%s", separator);
 		}
 		printf("\n");
