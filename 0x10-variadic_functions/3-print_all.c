@@ -7,7 +7,6 @@
 void print_all(const char * const format, ...)
 {
 
-	char *s
-	int flag, temp
-
+	
+	
 }
