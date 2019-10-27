@@ -61,7 +61,7 @@ void print_all(const char * const format, ...)
 	{NULL, NULL}};
 
 	unsigned int i = 0, j = 0;
-	void (*funtion)(va_list);
+	void (*fun)(va_list);
 	va_list list;
 	char *spt = "";
 
@@ -75,8 +75,8 @@ void print_all(const char * const format, ...)
 				if (array[j].s[0] == format[i])
 					{
 					printf("%s", spt);
-					funtion = array[j].p;
-					funtion(list);
+					fun = array[j].pt;
+					fun(list);
 					spt = ", ";
 					}
 				j++;
