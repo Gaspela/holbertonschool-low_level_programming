@@ -6,7 +6,7 @@
 void funtionprint_c(va_list c)
 {
 
-	printf("%c", va_arg(c, char));
+	printf("%c", va_arg(c, int));
 
 }
 /**
@@ -16,7 +16,7 @@ void funtionprint_c(va_list c)
 void funtionprint_i(va_list i)
 {
 
-	printf("%i", va_arg(i, int));
+	printf("%d", va_arg(i, int));
 
 }
 /**
@@ -54,29 +54,31 @@ void funtionprint_s(va_list s)
 void print_all(const char * const format, ...)
 {
 
-	va_list list;
-	char *spt;
-	int i = 0, j = 0;
-
 	funtions array[] = {{"c", funtionprint_c},
 	{"i", funtionprint_i},
 	{"f", funtionprint_f},
 	{"s", funtionprint_s},
 	{NULL, NULL}};
+
+	int i = 0, j = 0;
+	void (*funtion)(va_list);
+	va_list list;
+	char *spt = "";
+
 	/*Init va_list*/
 	va_start(list, format);
-	spt = "";
 	/*format is a list of types of arguments passed to the function*/
-		while (format && format[i] != '\0')
-			{
-			while ((array + j).c != '\0')
+		while (format && format[i])
+			{ j = 0;
+			while ((array[j]).s != NULL)
 				{
-				if (format[i] == (array + j).c)
+				if (array[i].s[0] == format[i])
 					{
 					printf("%s", spt);
-					(array + j).f(list);
+					funtion = array[j].p;
+					funtion(list);
 					spt = ", ";
-				}
+					}
 				j++;
 			}
 			i++;
