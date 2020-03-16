@@ -1,6 +1,7 @@
 #include "lists.h"
-/** 
- * insert_nodeint_at_index - function that inserts a new node at a given position.
+/**
+ * insert_nodeint_at_index - function that inserts a new node at a
+ * given position.
  * @head: the list.
  * @idx: the index of the list where the new node should be added.
  * @n: values.
