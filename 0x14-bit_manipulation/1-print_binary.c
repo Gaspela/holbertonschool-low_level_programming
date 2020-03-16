@@ -22,6 +22,5 @@ void print_binary(unsigned long int n)
 			else if (start_printing)
 				_putchar('0');
 		}
-	
-    }
+		}
 }
