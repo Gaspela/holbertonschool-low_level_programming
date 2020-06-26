@@ -1,82 +1,73 @@
-# Singly_Linked_Lists
+<h1 class="gap">0x12. C - Singly linked lists</h1>
+<article id="description" class="gap formatted-content">
+    <p><img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/229/giphy-3.gif" alt="" style=""></p>
 
-One Paragraph of project description goes here
+<h2>Resources</h2>
 
-## Getting Started
+<p><strong>Read or watch</strong>:</p>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+<ul>
+<li><a href="/rltoken/2WOe5XO84Puxd4Y1FUJwVQ" title="Linked Lists" target="_blank">Linked Lists</a> </li>
+<li><a href="/rltoken/jiyCC9L1Axkl_nEmuh4j3w" title="Google" target="_blank">Google</a> </li>
+<li><a href="/rltoken/DcEVPdONWy2p1x8XPH53Uw" title="Youtube" target="_blank">Youtube</a> </li>
+<li><a href="/rltoken/gb2LD9B9peFEyJ6JKuP6UA" title="Data Structures" target="_blank">Data Structures</a> </li>
+</ul>
 
-### Prerequisites
+<h2>Learning Objectives</h2>
 
-What things you need to install the software and how to install them
+<p>At the end of this project, you are expected to be able to <a href="/rltoken/8bKyzTFahgtvQf7aftTjPw" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
 
-```
-Give examples
-```
+<h3>General</h3>
 
-### Installing
+<ul>
+<li>When and why using linked lists vs arrays</li>
+<li>How to build and use linked lists</li>
+</ul>
 
-A step by step series of examples that tell you how to get a development env running
+<h2>Requirements</h2>
 
-Say what the step will be
+<h3>General</h3>
 
-```
-Give the example
-```
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your files will be compiled on Ubuntu 14.04 LTS</li>
+<li>Your programs and functions will be compiled with <code>gcc 4.8.4</code> using the flags <code>-Wall</code> <code>-Werror</code> <code>-Wextra</code> <code>and -pedantic</code></li>
+<li>All your files should end with a new line</li>
+<li>A <code>README.md</code> file, at the root of the folder of the project is mandatory</li>
+<li>Your code should use the <code>Betty</code> style. It will be checked using <a href="https://github.com/holbertonschool/Betty/blob/master/betty-style.pl" title="betty-style.pl" target="_blank">betty-style.pl</a> and <a href="https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl" title="betty-doc.pl" target="_blank">betty-doc.pl</a></li>
+<li>You are not allowed to use global variables</li>
+<li>No more than 5 functions per file</li>
+<li>The only C standard library functions allowed are <code>malloc</code>, <code>free</code> and <code>exit</code>. Any use of functions like <code>printf</code>, <code>puts</code>, <code>calloc</code>, <code>realloc</code> etc… is forbidden</li>
+<li>You are allowed to use <a href="https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c" title="_putchar" target="_blank">_putchar</a></li>
+<li>You don’t have to push <code>_putchar.c</code>, we will use our file. If you do it won’t be taken into account</li>
+<li>In the following examples, the <code>main.c</code> files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own <code>main.c</code> files at compilation. Our <code>main.c</code> files might be different from the one shown in the examples</li>
+<li>The prototypes of all your functions and the prototype of the function <code>_putchar</code> should be included in your header file called <code>lists.h</code></li>
+<li>Don’t forget to push your header file</li>
+<li>All your header files should be include guarded</li>
+</ul>
 
-And repeat
+<h2>More Info</h2>
 
-```
-until finished
-```
+<p>Please use this data structure for this project:</p>
 
-End with an example of getting some data out of the system or using it for a little demo
+<pre><code>/**
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ * for Holberton project
+ */
+typedef struct list_s
+{
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
+</code></pre>
 
-## Running the tests
+  </article>
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system.
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Samir Millan Orozco** - *Initial work* - [PurpleBooth](https://github.com/Gaspela04)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+## Author
+* **Samir millan** - [Gaspela04](https://github.com/Gaspela04)
